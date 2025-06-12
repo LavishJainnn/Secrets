@@ -12,7 +12,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({
-    mongoUrl: "mongodb://localhost:27017/secrets"
+    mongoUrl: "mongodb+srv://lavishjain30306:90IiFc8QkJ9lwHr4@cluster0.8mwaclu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   })
 }));
 
@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/secrets");
+mongoose.connect("mongodb+srv://lavishjain30306:90IiFc8QkJ9lwHr4@cluster0.8mwaclu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 const dt = mongoose.Schema({
     email: String,
     password: String,
