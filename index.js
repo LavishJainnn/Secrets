@@ -93,6 +93,6 @@ app.get("/submit", function(req,res){
     res.render("partials/submit");
 });
 
-app.listen(3,function(){
+app.listen(3000,function(){
     console.log("Server started successfully !");
 });
