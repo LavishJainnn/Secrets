@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const encrypt = require('mongoose-encryption');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
+const app = express();
 
 app.use(session({
   secret: "yourSecret",
@@ -16,7 +17,7 @@ app.use(session({
 }));
 
 
-const app = express();
+
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
