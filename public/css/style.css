@@ -1,0 +1,18 @@
+body{
+    background: rgb(254, 254, 200) !important;
+}
+.centered{
+    padding-top: 200px;
+    text-align: center;
+}
+.secret-text{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+}
+.lh{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -38px;
+}
